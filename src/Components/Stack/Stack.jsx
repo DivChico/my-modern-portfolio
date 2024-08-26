@@ -1,9 +1,17 @@
+import { motion } from "framer-motion";
 import React from "react";
+
 const Stack = () => {
   return (
-    <section className="py-5 flex items-center  justify-around gap-3  shadow-lg mt-1 bg-secondary rounded-md text-sm">
+    <motion.section
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 2 }}
+      className="py-5 flex items-center  justify-around gap-3  shadow-lg mt-1 bg-secondary rounded-md text-sm"
+    >
       {/* html */}
       <svg
+        className="cursor-pointer hover:scale-110 transition-all duration-300"
         width="64px"
         height="64px"
         viewBox="0 0 32 32"
@@ -28,6 +36,7 @@ const Stack = () => {
       </svg>
       {/* css */}
       <svg
+        className="cursor-pointer hover:scale-110 transition-all duration-300"
         width="64px"
         height="64px"
         viewBox="0 0 32 32"
@@ -52,6 +61,7 @@ const Stack = () => {
       </svg>
       {/* tailwind */}
       <svg
+        className="cursor-pointer hover:scale-110 transition-all duration-300"
         width="64px"
         height="64px"
         viewBox="0 -51 256 256"
@@ -100,6 +110,7 @@ const Stack = () => {
       </svg>
       {/* bootstrap */}
       <svg
+        className="cursor-pointer hover:scale-110 transition-all duration-300"
         width="64px"
         height="64px"
         viewBox="0 0 256 256"
@@ -136,6 +147,7 @@ const Stack = () => {
       </svg>
       {/* js */}
       <svg
+        className="cursor-pointer hover:scale-110 transition-all duration-300"
         xmlns="http://www.w3.org/2000/svg"
         aria-label="JavaScript"
         role="img"
@@ -157,6 +169,7 @@ const Stack = () => {
       </svg>
       {/* react */}
       <svg
+        className="cursor-pointer hover:scale-110 transition-all duration-300"
         width="64px"
         height="64px"
         viewBox="0 0 32 32"
@@ -185,6 +198,7 @@ const Stack = () => {
       </svg>
       {/* vite */}
       <svg
+        className="cursor-pointer hover:scale-110 transition-all duration-300"
         width="64px"
         height="64px"
         viewBox="0 0 32 32"
@@ -238,6 +252,7 @@ const Stack = () => {
       </svg>
       {/* next */}
       <svg
+        className="cursor-pointer hover:scale-110 transition-all duration-300"
         width="64px"
         height="64px"
         viewBox="0 0 15 15"
@@ -260,6 +275,7 @@ const Stack = () => {
       </svg>
       {/* node js */}
       <svg
+        className="cursor-pointer hover:scale-110 transition-all duration-300"
         width="64px"
         height="64px"
         viewBox="-16.5 0 289 289"
@@ -290,6 +306,7 @@ const Stack = () => {
       </svg>
       {/* supabase */}
       <svg
+        className="cursor-pointer hover:scale-110 transition-all duration-300"
         xmlns="http://www.w3.org/2000/svg"
         width="62.3"
         height="64"
@@ -334,6 +351,7 @@ const Stack = () => {
 
       {/* mangodb */}
       <svg
+        className="cursor-pointer hover:scale-110 transition-all duration-300"
         xmlns="http://www.w3.org/2000/svg"
         width="29.85"
         height="64"
@@ -344,7 +362,7 @@ const Stack = () => {
           d="M175.622 61.108C152.612 33.807 132.797 6.078 128.749.32a1.03 1.03 0 0 0-1.492 0c-4.048 5.759-23.863 33.487-46.874 60.788c-197.507 251.896 31.108 421.89 31.108 421.89l1.917 1.28c1.704 26.234 5.966 63.988 5.966 63.988h17.045s4.26-37.54 5.965-63.987l1.918-1.494c.213.214 228.828-169.78 31.32-421.677m-47.726 418.05s-10.227-8.744-12.997-13.222v-.428l12.358-274.292c0-.853 1.279-.853 1.279 0l12.357 274.292v.428c-2.77 4.478-12.997 13.223-12.997 13.223"
         />
       </svg>
-    </section>
+    </motion.section>
   );
 };
 

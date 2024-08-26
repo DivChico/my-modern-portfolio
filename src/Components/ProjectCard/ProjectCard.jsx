@@ -1,9 +1,10 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 const ProjectCard = () => {
   return (
-    <div
-      className="shadow-lg bg-secondary rounded-md p-5 w-full
+    <motion.div
+      className="shadow-lg bg-secondary rounded-md p-5 w-full cursor-pointer hover:scale-105 transition-all duration-300
      space-y-1"
     >
       <img
@@ -35,7 +36,7 @@ const ProjectCard = () => {
           </svg>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -5,16 +5,28 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
+import { motion } from "framer-motion";
+
 const Hero = () => {
   return (
     <section className="flex  items-center flex-col py-5  shadow-lg mt-4 bg-secondary rounded-md">
       <div className=" py-10">
-        <p className=" text-3xl md:text-6xl font-bold relative right-20">
+        <motion.p
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 2 }}
+          className=" text-3xl md:text-6xl font-bold relative right-20"
+        >
           Web & Mobile
-        </p>
-        <p className=" text-3xl md:text-6xl font-bold relative left-20">
+        </motion.p>
+        <motion.p
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 2 }}
+          className=" text-3xl md:text-6xl font-bold relative left-20"
+        >
           App Developer
-        </p>
+        </motion.p>
       </div>
       <div className=" flex flex-col gap-4">
         <div>
@@ -27,13 +39,30 @@ const Hero = () => {
         <div className="flex items-center  justify-between ">
           <div className="flex items-center gap-4">
             <p className="text-sm">say hello</p>
-            <InstagramIcon fontSize="small" />
-            <GitHubIcon fontSize="small" />
-            <LinkedInIcon fontSize="small" />
-            <FacebookIcon fontSize="small" />
+            <a
+              href="https://github.com/DivChico"
+              className=" cursor-pointer hover:scale-110 transition-all duration-300"
+              target="_blank"
+            >
+              <GitHubIcon fontSize="small" />
+            </a>
+            <a
+              href="https://github.com/DivChico"
+              className=" cursor-pointer hover:scale-110 transition-all duration-300"
+              target="_blank"
+            >
+              <LinkedInIcon fontSize="small" />
+            </a>
+            <a
+              href="https://github.com/DivChico"
+              className=" cursor-pointer hover:scale-110 transition-all duration-300"
+              target="_blank"
+            >
+              <FacebookIcon fontSize="small" />
+            </a>
           </div>
           <div>
-            <button className="bg-tertiary text-sm hover:bg-tertiary-400 text-gray-800 font-bold py-1 px-2 rounded inline-flex items-center">
+            <button className="bg-tertiary text-sm hover:bg-tertiary-400 text-gray-800 font-bold py-1 px-2 rounded inline-flex items-center cursor-pointer hover:scale-110 transition-all duration-300">
               Ruseme
               <FileDownloadOutlinedIcon fontSize="small" />
             </button>
