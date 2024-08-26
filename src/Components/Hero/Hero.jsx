@@ -7,7 +7,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 const Hero = () => {
   return (
-    <div className="flex  items-center flex-col py-5  shadow-lg mt-4 bg-secondary rounded-md">
+    <section className="flex  items-center flex-col py-5  shadow-lg mt-4 bg-secondary rounded-md">
       <div className=" py-10">
         <p className=" text-3xl md:text-6xl font-bold relative right-20">
           Web & Mobile
@@ -33,14 +33,14 @@ const Hero = () => {
             <FacebookIcon fontSize="small" />
           </div>
           <div>
-            <button className="bg-gray-300 text-sm hover:bg-gray-400 text-gray-800 font-bold py-1 px-2 rounded inline-flex items-center">
+            <button className="bg-tertiary text-sm hover:bg-tertiary-400 text-gray-800 font-bold py-1 px-2 rounded inline-flex items-center">
               Ruseme
               <FileDownloadOutlinedIcon fontSize="small" />
             </button>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
