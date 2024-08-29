@@ -13,7 +13,7 @@ const Hero = () => {
       <div className=" py-10">
         <motion.p
           initial={{ x: 100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 2 }}
           className=" text-3xl md:text-6xl font-bold relative right-20"
         >
@@ -21,7 +21,7 @@ const Hero = () => {
         </motion.p>
         <motion.p
           initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 2 }}
           className=" text-3xl md:text-6xl font-bold relative left-20"
         >
@@ -41,21 +41,21 @@ const Hero = () => {
             <p className="text-sm">say hello 👋</p>
             <a
               href="https://github.com/DivChico"
-              className=" cursor-pointer hover:scale-110 transition-all duration-300"
+              className="  hover:text-tertiary cursor-pointer hover:scale-110 transition-all duration-300"
               target="_blank"
             >
               <GitHubIcon fontSize="small" />
             </a>
             <a
               href="https://www.linkedin.com/in/abdullah-alatawwa/"
-              className=" cursor-pointer hover:scale-110 transition-all duration-300"
+              className="hover:text-tertiary cursor-pointer hover:scale-110 transition-all duration-300"
               target="_blank"
             >
               <LinkedInIcon fontSize="small" />
             </a>
             <a
               href="https://www.facebook.com/abdullah.alatawwna/"
-              className=" cursor-pointer hover:scale-110 transition-all duration-300"
+              className="hover:text-tertiary cursor-pointer hover:scale-110 transition-all duration-300"
               target="_blank"
             >
               <FacebookIcon fontSize="small" />
