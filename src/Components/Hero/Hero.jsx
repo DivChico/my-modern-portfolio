@@ -65,7 +65,7 @@ const Hero = () => {
             <a
               href="../../../public/assets/abdullah cv.png" // Replace with the actual path to your CV file
               download="Abdullah_Alatawwa_CV.pdf" // Optional: Specify a filename for the downloaded file
-              className="bg-tertiary text-sm hover:bg-tertiary-400 text-gray-800 font-bold py-1 px-2 rounded inline-flex items-center cursor-pointer hover:scale-110 transition-all duration-300"
+              className=" text-white bg-tertiary text-sm hover:bg-tertiary-400 text-gray-800 font-bold py-1 px-2 rounded inline-flex items-center cursor-pointer hover:scale-110 transition-all duration-300"
             >
               Ruseme
               <FileDownloadOutlinedIcon fontSize="small" />
