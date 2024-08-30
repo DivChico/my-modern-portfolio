@@ -9,6 +9,18 @@ export default {
         tertiary: "rgba(118, 171, 174)",
         text: "rgba(238, 238, 238)",
       },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "5rem",
+          sm: "10rem",
+          lg: "20rem",
+          xl: "25rem",
+        },
+        screens: {
+          "2xl": "1440px", //
+        },
+      },
     },
   },
   plugins: [],
