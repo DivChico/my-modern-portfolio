@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Tooltip from "../ToolTip/ToolTip";
 
-const TestimonialCard = ({ comment, image, role, name, source }) => {
+const TestimonialCard = ({ comment, image, role, name, source, UniqKey }) => {
   const [showFullComment, setShowFullComment] = useState(false);
 
   const toggleComment = () => {
@@ -9,7 +9,10 @@ const TestimonialCard = ({ comment, image, role, name, source }) => {
   };
 
   return (
-    <figure className="hover:scale-105 transition-transform duration-300 flex flex-col justify-between items-center text-center bg-secondary p-4 rounded-md shadow-lg h-64">
+    <figure
+      key={UniqKey}
+      className="hover:scale-105 transition-transform duration-300 flex flex-col justify-between items-center text-center bg-secondary p-4 rounded-md shadow-lg h-64"
+    >
       {/* Comment Section */}
       <blockquote
         className={`mx-auto px-2 max-w-full text-gray-500 dark:text-gray-400 flex-1 ${

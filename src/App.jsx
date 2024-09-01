@@ -28,7 +28,7 @@ function App() {
         <Loading />
       ) : (
         <div className="bg-main min-h-screen text-text scroll-smooth">
-          <div className="container mx-auto py-4 lg:px-48">
+          <div className="container mx-auto py-4  lg:max-w-screen-lg">
             <Header />
             <Hero />
             <motion.h2

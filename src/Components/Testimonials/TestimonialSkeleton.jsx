@@ -1,8 +1,11 @@
 import React from "react";
 
-const TestimonialSkeleton = () => {
+const TestimonialSkeleton = ({ UniqKey }) => {
   return (
-    <div className="animate-pulse flex flex-col justify-center items-center text-center bg-secondary p-4 rounded-md shadow-lg">
+    <div
+      key={UniqKey}
+      className="animate-pulse flex flex-col justify-center items-center text-center bg-secondary p-4 rounded-md shadow-lg"
+    >
       {/* Comment Placeholder */}
       <div className="bg-gray-400 dark:bg-gray-600 h-16 w-3/4 mb-4 rounded"></div>
 

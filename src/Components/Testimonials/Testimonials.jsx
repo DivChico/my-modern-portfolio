@@ -64,12 +64,13 @@ const Testimonials = () => {
           {loading
             ? testimonials.map((_, index) => (
                 <>
-                  <TestimonialSkeleton key={index} />
+                  <TestimonialSkeleton key={index} UniqKey={index} />
                 </>
               ))
             : testimonials.map((testimonial, index) => (
                 <TestimonialCard
                   key={index}
+                  UniqKey={index}
                   comment={testimonial.comment}
                   image={testimonial.image}
                   role={testimonial.role}

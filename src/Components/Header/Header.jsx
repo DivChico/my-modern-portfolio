@@ -16,7 +16,11 @@ const Header = () => {
           rel="noopener noreferrer"
           className="hover:scale-110 transition-all duration-300 cursor-pointer"
         >
-          DivChico
+          <img
+            src="../../../public/assets/chico-high-resolution-logo-white-transparent.png"
+            alt=""
+            className="w-16"
+          />
         </a>
       </div>
 
