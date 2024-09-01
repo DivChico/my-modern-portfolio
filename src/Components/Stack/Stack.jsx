@@ -7,7 +7,7 @@ const Stack = () => {
       initial={{ y: 100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 2 }}
-      className="py-5 flex items-center  justify-around gap-3  shadow-lg mt-1 bg-secondary rounded-md text-sm"
+      className="py-5 flex items-center md:flex-row  flex-wrap px-2  justify-around gap-3  shadow-lg mt-1 bg-secondary rounded-md text-sm"
     >
       {/* html */}
       <Tooltip title="Html">

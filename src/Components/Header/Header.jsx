@@ -23,7 +23,7 @@ const Header = () => {
       {/* Mobile Menu Button */}
       <button
         onClick={toggleMenu}
-        className="block lg:hidden p-2 rounded-lg hover:bg-gray-200 focus:outline-none"
+        className="block lg:hidden p-2 rounded-lg hover:bg-blue-500 focus:outline-none"
         aria-label="Toggle menu"
       >
         <svg

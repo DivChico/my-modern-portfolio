@@ -48,13 +48,11 @@ const ProjectsList = () => {
       initial={{ y: 100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 2 }}
-      className="grid items-center gap-5 grid-cols-2 mt-1"
+      className="grid items-center gap-5 md:grid-cols-2 mt-1 "
     >
       {loading
         ? // Display multiple SkeletonCards if loading
-          Array(2)
-            .fill(null)
-            .map((_, index) => <SkeletonCard key={index} />)
+          projects.fill(null).map((_, index) => <SkeletonCard key={index} />)
         : // Display ProjectCards once loaded
           projects.map((project, index) => (
             <ProjectCard

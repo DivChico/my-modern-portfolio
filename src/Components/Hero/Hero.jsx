@@ -40,7 +40,7 @@ const Hero = () => {
             <p className="text-sm md:text-base">say hello 👋</p>
             <a
               href="https://github.com/DivChico"
-              className="hover:text-tertiary cursor-pointer hover:scale-110 transition-all duration-300"
+              className="hover:text-blue-500 cursor-pointer hover:scale-110 transition-all duration-300"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -49,7 +49,7 @@ const Hero = () => {
             </a>
             <a
               href="https://www.linkedin.com/in/abdullah-alatawwa/"
-              className="hover:text-tertiary cursor-pointer hover:scale-110 transition-all duration-300"
+              className="hover:text-blue-500 cursor-pointer hover:scale-110 transition-all duration-300"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -58,7 +58,7 @@ const Hero = () => {
             </a>
             <a
               href="https://www.facebook.com/abdullah.alatawwna/"
-              className="hover:text-tertiary cursor-pointer hover:scale-110 transition-all duration-300"
+              className="hover:text-blue-500 cursor-pointer hover:scale-110 transition-all duration-300"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -70,7 +70,7 @@ const Hero = () => {
             <a
               href="/assets/abdullah-cv.pdf" // Replace with the correct path to your CV file
               download="Abdullah_Alatawwa_CV.pdf"
-              className="flex items-center text-white bg-tertiary text-sm hover:bg-tertiary-400 font-bold py-2 px-4 rounded-lg transition-all duration-300"
+              className="flex items-center text-white  hover:bg-tertiary bg-blue-500 text-sm hover:bg-tertiary-400 font-bold py-2 px-4 rounded-lg transition-all duration-300"
               aria-label="Download CV"
             >
               Ruseme

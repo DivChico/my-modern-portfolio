@@ -36,7 +36,7 @@ const ProjectCard = ({
           </button>
           <button
             onClick={() => window.open(projectLink, "_blank")}
-            className="flex items-center gap-1 text-xs text-white bg-tertiary px-5 py-1 rounded-md hover:bg-blue-500"
+            className="flex items-center gap-1 text-xs text-white hover:bg-tertiary px-5 py-1 rounded-md bg-blue-500"
           >
             Live
             <LanguageIcon fontSize="small" />
