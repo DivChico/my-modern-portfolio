@@ -14,13 +14,9 @@ const Header = () => {
           href="https://github.com/DivChico"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:scale-110 transition-all duration-300 cursor-pointer"
+          className="hover:scale-110 transition-all  font-bold tracking-widest duration-300 cursor-pointer"
         >
-          <img
-            src="../../../public/assets/chico-high-resolution-logo-white-transparent.png"
-            alt=""
-            className="w-16"
-          />
+          Chico
         </a>
       </div>
 

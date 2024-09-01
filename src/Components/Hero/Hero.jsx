@@ -35,16 +35,19 @@ const Hero = () => {
           audience. Currently based in 📍 Gaza, Palestine.
         </p>
 
-        <div className="flex gap-6 mt-4">
-          <div className="flex items-center bg-secondary border p-4 rounded-lg shadow-md">
-            <HowToRegIcon className="text-blue-500  mr-2" />
+        <div className="flex gap-6 mt-4 flex-wrap flex-col items-center md:flex-row">
+          <div className="flex items-center hover:scale-105 bg-secondary border p-4 rounded-lg shadow-md">
+            <HowToRegIcon className="  mr-2" />
             <p className="text-sm md:text-base">
               <strong>Experience:</strong> +
               {<CountUp decimals={1} end={1.8} duration={3} />} years
             </p>
           </div>
-          <div className="flex items-center bg- border p-4 rounded-lg shadow-md">
-            <GitHubIcon className="text-black mr-2" />
+          <div
+            onClick={() => window.open("https://github.com/DivChico", "_blank")}
+            className="flex items-center hover:scale-105 cursor-pointer border p-4 rounded-lg shadow-md"
+          >
+            <GitHubIcon className=" mr-2" />
             <p className="text-sm md:text-base">
               <strong>Repos:</strong> +{<CountUp end={22} duration={3} />}
             </p>
