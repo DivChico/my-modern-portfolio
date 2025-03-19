@@ -5,9 +5,8 @@ import { motion } from "framer-motion";
 import socialMediaAppImage from "../../../public/assets/social-media-app.jpg";
 import Interactive from "../../../public/assets/project card image.jpg";
 import Mntn from "../../../public/assets/project card image (1).jpg";
-import e-commerce from "../../../public/assets/e-commerce.png";
+import ecommerce from "../../../public/assets/e-commerce.png";
 import shahada from "../../../public/assets/shahada.png";
-
 
 const ProjectsList = () => {
   // Define the projects array correctly
@@ -21,7 +20,7 @@ const ProjectsList = () => {
         "sanity",
         "lucia",
       ],
-      image: e-commerce,
+      image: ecommerce,
       title: "Alkhateb store - E-commerce store",
       githubLink: "https://github.com/DivChico/el-khateb-tech-store",
       projectLink: "https://el-khateb-tech-store.vercel.app/",
@@ -46,14 +45,14 @@ const ProjectsList = () => {
       title: "Mntn - landing page",
       githubLink: "https://github.com/DivChico/Mntn",
       projectLink: "https://mntn-landing-page.onrender.com/",
-    },{
-      stackUsed: ["React JS", "Tailwind", "Vite" , "Levenshtein "],
+    },
+    {
+      stackUsed: ["React JS", "Tailwind", "Vite", "Levenshtein "],
       image: shahada,
       title: "Voice-Based Word Recitation App",
       githubLink: "https://github.com/DivChico/Shahada-app",
       projectLink: "https://shahada-app-divchicos-projects.vercel.app/",
     },
-    
   ];
 
   const [loading, setLoading] = useState(true);
