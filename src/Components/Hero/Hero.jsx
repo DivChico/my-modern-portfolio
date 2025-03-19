@@ -8,6 +8,10 @@ import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const experience = (
+    (new Date() - new Date(2023, 0, 1)) /
+    (1000 * 60 * 60 * 24 * 365)
+  ).toFixed(1);
   return (
     <section className="flex flex-col items-center py-8 md:py-12 mt-4 bg-secondary rounded-md shadow-lg">
       <div className="flex flex-col items-center text-center py-6">
@@ -40,7 +44,7 @@ const Hero = () => {
             <HowToRegIcon className="  mr-2" />
             <p className="text-sm md:text-base">
               <strong>Experience:</strong> +
-              {<CountUp decimals={1} end={1.8} duration={3} />} years
+              {<CountUp decimals={1} end={experience} duration={3} />} years
             </p>
           </div>
           <div
@@ -49,7 +53,7 @@ const Hero = () => {
           >
             <GitHubIcon className=" mr-2" />
             <p className="text-sm md:text-base">
-              <strong>Repos:</strong> +{<CountUp end={22} duration={3} />}
+              <strong>Repos:</strong> +{<CountUp end={30} duration={3} />}
             </p>
           </div>
         </div>
@@ -87,7 +91,7 @@ const Hero = () => {
           </div>
           <div>
             <a
-              href="/assets/abdullah-cv.pdf"
+              href="/public/assets/cv abdullah alatawwna.pdf"
               download="Abdullah_Alatawwa_CV.pdf"
               className="flex items-center text-white hover:bg-tertiary bg-blue-500 text-sm hover:bg-tertiary-400 font-bold py-2 px-4 rounded-lg transition-all duration-300"
               aria-label="Download CV"

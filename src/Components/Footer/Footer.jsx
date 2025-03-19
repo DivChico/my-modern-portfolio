@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-secondary rounded-lg shadow mt-4 ">
       <div className="w-full mx-auto  p-4 md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          © 2024{" "}
+          © 2025{" "}
           <a
             href="https://github.com/DivChico"
             className="hover:underline"
