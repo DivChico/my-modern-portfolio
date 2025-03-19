@@ -21,7 +21,7 @@ const Hero = () => {
           transition={{ duration: 2 }}
           className="text-4xl md:text-5xl lg:text-6xl font-bold mb-2"
         >
-          Web & Mobile
+          Full Stack
         </motion.p>
         <motion.p
           initial={{ x: -100, opacity: 0 }}
@@ -29,7 +29,7 @@ const Hero = () => {
           transition={{ duration: 2 }}
           className="text-3xl md:text-5xl lg:text-6xl font-bold"
         >
-          App Developer
+          Web Developer
         </motion.p>
       </div>
       <div className="flex flex-col items-center gap-4 px-4">
